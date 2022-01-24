@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
+  height: 100vh;
 }
 
 .navbar {
@@ -73,4 +74,16 @@ input {
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -13,7 +13,6 @@ const Navbar = () => {
       const characters = await axios(
         `https://www.breakingbadapi.com/api/characters?name=${query}`
       );
-      console.log(characters.data);
       setData(characters.data);
       setIsLoading(false);
     };
